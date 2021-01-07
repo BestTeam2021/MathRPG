@@ -1,0 +1,2 @@
+com/ggteam/mathrpg/MainGame.java
+ com.ggteam.mathrpg.MainGame

@@ -1,0 +1,2 @@
+com/ggteam/mathrpg/desktop/DesktopLauncher.java
+ com.ggteam.mathrpg.desktop.DesktopLauncher

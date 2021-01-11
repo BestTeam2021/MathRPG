@@ -1,2 +1,6 @@
+model/GameObject.java
+ model.GameObject
+view/GameScreen.java
+ view.GameScreen
 com/ggteam/mathrpg/MainGame.java
  com.ggteam.mathrpg.MainGame

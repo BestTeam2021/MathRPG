@@ -1,0 +1,10 @@
+com/ggteam/mathrpg/BuildConfig.java
+ com.ggteam.mathrpg.BuildConfig
+com/ggteam/mathrpg/R.java
+ com.ggteam.mathrpg.R
+ com.ggteam.mathrpg.R$color
+ com.ggteam.mathrpg.R$drawable
+ com.ggteam.mathrpg.R$string
+ com.ggteam.mathrpg.R$style
+com/ggteam/mathrpg/AndroidLauncher.java
+ com.ggteam.mathrpg.AndroidLauncher

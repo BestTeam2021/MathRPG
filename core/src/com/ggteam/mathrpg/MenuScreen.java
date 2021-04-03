@@ -12,6 +12,8 @@ import com.badlogic.gdx.math.Vector3;
 public class MenuScreen implements Screen {
     Texture exitButtonTexture;
     Texture backGroundTexture;
+    Texture MenuButtonTexture;
+    Sprite MenuButtonSprite;
     Sprite startButtonSprite;
     Sprite exitButtonSprite;
     Sprite backGroundSprite;
@@ -27,6 +29,12 @@ public class MenuScreen implements Screen {
     public void show() {
         this.backGroundTexture = new Texture(Gdx.files.internal("temporary_background.jpg"));
         this.backGroundSprite = new Sprite(this.backGroundTexture);
+        this.exitButtonTexture = new Texture(Gdx.files.internal("ExitButton.png"));
+        this.exitButtonSprite = new Sprite(this.exitButtonTexture);
+        this.startButtonTexture = new Texture(Gdx.files.internal("startButton.png"));
+        this.startButtonSprite = new Sprite(this.startButtonTexture);
+        this.MenuButtonTexture = new Texture(Gdx.files.internal("MenuButton.png"));
+        this.MenuButtonSprite = new Sprite(this.MenuButtonTexture);
     }
 
     public void render(float delta) {
@@ -35,6 +43,9 @@ public class MenuScreen implements Screen {
         this.batch.setProjectionMatrix(this.camera.combined);
         this.batch.begin();
         this.backGroundSprite.draw(this.batch);
+        this.startButtonSprite.draw(this.batch);
+        this.exitButtonSprite.draw(this.batch);
+        this.MenuButtonSprite.draw(this.batch);
         this.handleTouch();
         this.batch.end();
     }
@@ -55,6 +66,7 @@ public class MenuScreen implements Screen {
     public void dispose() {
         this.startButtonTexture.dispose();
         this.exitButtonTexture.dispose();
+        MenuButtonTexture.dispose();
         this.batch.dispose();
     }
 
@@ -63,6 +75,8 @@ public class MenuScreen implements Screen {
         this.width = (float)Gdx.graphics.getWidth();
         this.camera = new OrthographicCamera(this.width, this.height);
         this.batch = new SpriteBatch();
+        this.startButtonTexture = new Texture(Gdx.files.internal("startButton.png"));
+        this.exitButtonTexture = new Texture(Gdx.files.internal("ExitButton.png"));
         this.startButtonTexture = new Texture(Gdx.files.internal("startButton.png"));
         this.temp = new Vector3();
         this.game = game;

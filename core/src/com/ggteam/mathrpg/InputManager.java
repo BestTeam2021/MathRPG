@@ -13,7 +13,6 @@ public class InputManager {
     public static void handleInput(OrthographicCamera camera) {
         if (Gdx.input.justTouched()) {
             temp.set(Gdx.input.getX(), Gdx.input.getY(), 0);
-
             camera.unproject(temp);
             float touchX = temp.x;
             float touchY = temp.y;

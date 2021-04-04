@@ -26,7 +26,7 @@ public class Knight {
 
     public void handleTouch(float x, float y) {
         if ((double)(x - this.knightSprite.getWidth() / 2.0F) > 0.0D) {
-            this.setPosition(x - this.knightSprite.getWidth() / 2.0F, y - this.knightSprite.getHeight() / 2.0F);
+            this.setPosition(x - this.knightSprite.getWidth() * 2.0F, y - this.knightSprite.getHeight() * 2.0F);
         } else {
             this.setPosition(0.0F, 0.0F);
        }

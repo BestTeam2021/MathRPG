@@ -22,7 +22,8 @@ public class GameManager {
         knight = new Knight();
         knightTexture = new Texture(Gdx.files.internal("knight.png"));
         knight.knightSprite = new Sprite(knightTexture);
-        knight.knightSprite.setSize(knight.knightSprite.getWidth() * (width / KNIGHT_RESIZE_FACTOR), knight.knightSprite.getHeight() * (width / KNIGHT_RESIZE_FACTOR));
+       knight.knightSprite.setSize(knight.knightSprite.getWidth() * (width / KNIGHT_RESIZE_FACTOR), knight.knightSprite.getHeight() * (width / KNIGHT_RESIZE_FACTOR));
+
 
         knight.setPosition(width / 2.0F, height / 2.0F);
         backgroundTexture = new Texture(Gdx.files.internal("temporary_background.jpg"));

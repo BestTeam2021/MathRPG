@@ -18,8 +18,7 @@ public class GameScreen implements Screen {
     }
 
     public void show() {
-        this.batch = new SpriteBatch();
-        this.warrior = new Texture(Gdx.files.internal("IMG_20210109_141129.jpg"));
+
     }
 
     public void render(float delta) {

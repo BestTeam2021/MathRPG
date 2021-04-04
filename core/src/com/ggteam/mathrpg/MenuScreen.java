@@ -2,14 +2,25 @@
 package com.ggteam.mathrpg;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Graphics;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.utils.viewport.ExtendViewport;
+import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.badlogic.gdx.utils.viewport.Viewport;
+
+
+
 
 public class MenuScreen implements Screen {
+
+
+
     Texture exitButtonTexture;
     Texture backGroundTexture;
     Texture MenuButtonTexture;
@@ -25,16 +36,24 @@ public class MenuScreen implements Screen {
     private static final float EXIT_VERT_POSITION_FACTOR = 4.2F;
     MainGame game;
     Vector3 temp;
+//    private Viewport viewport;
+//    private Stage stage;
+
 
     public void show() {
         this.backGroundTexture = new Texture(Gdx.files.internal("temporary_background.jpg"));
-        this.backGroundSprite = new Sprite(this.backGroundTexture);
+       this.backGroundSprite = new Sprite(this.backGroundTexture);
         this.exitButtonTexture = new Texture(Gdx.files.internal("ExitButton.png"));
         this.exitButtonSprite = new Sprite(this.exitButtonTexture);
         this.startButtonTexture = new Texture(Gdx.files.internal("startButton.png"));
         this.startButtonSprite = new Sprite(this.startButtonTexture);
         this.MenuButtonTexture = new Texture(Gdx.files.internal("MenuButton.png"));
         this.MenuButtonSprite = new Sprite(this.MenuButtonTexture);
+        this.backGroundSprite.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+
+//       viewport = new FitViewport(800, 480, camera);
+//      camera = new OrthographicCamera();
+//        stage = new Stage(new ExtendViewport(width, height));
     }
 
     public void render(float delta) {
@@ -42,7 +61,9 @@ public class MenuScreen implements Screen {
         Gdx.gl.glClear(16384);
         this.batch.setProjectionMatrix(this.camera.combined);
         this.batch.begin();
-        this.backGroundSprite.draw(this.batch);
+        //batch.draw(backGroundTexture, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight()  );
+
+      this.backGroundSprite.draw(batch);
         this.startButtonSprite.draw(this.batch);
         this.exitButtonSprite.draw(this.batch);
         this.MenuButtonSprite.draw(this.batch);
@@ -51,6 +72,8 @@ public class MenuScreen implements Screen {
     }
 
     public void resize(int width, int height) {
+//        viewport.update(width, height);
+//       stage.getViewport().update(width, height, true);
     }
 
     public void pause() {

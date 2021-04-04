@@ -1,8 +1,10 @@
+package com.ggteam.mathrpg;
+
 //package com.ggteam.mathrpg;
 //
 //import java.util.Random;
 //
-//public class Enemies {
+public class Enemies {}
 //    private Random generator = new Random();
 //    boolean is_under_attack = false;
 //    String type = "";

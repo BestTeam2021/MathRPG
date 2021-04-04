@@ -1,6 +1,7 @@
 package com.ggteam.mathrpg;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -19,6 +20,7 @@ public class Adventure implements Screen {
         this.camera.setToOrtho(false);
         this.batch = new SpriteBatch();
         GameManager.initialize(width, height);
+
     }
 
     public void resize(int width, int height) {
@@ -45,5 +47,6 @@ public class Adventure implements Screen {
         this.batch.begin();
         GameManager.renderGame(this.batch);
         this.batch.end();
+        InputManager.handleInput(camera);
     }
 }

@@ -1,20 +1,24 @@
-utils/Equations.java
- utils.Equations
 com/ggteam/mathrpg/Room.java
  com.ggteam.mathrpg.Room
-com/ggteam/mathrpg/Knight.java
- com.ggteam.mathrpg.Knight
+com/ggteam/mathrpg/Enemies.java
+ com.ggteam.mathrpg.Enemies
+com/ggteam/mathrpg/MainGame.java
+ com.ggteam.mathrpg.MainGame
 model/GameObject.java
  model.GameObject
-view/GameScreen.java
- view.GameScreen
+com/ggteam/mathrpg/Knight.java
+ com.ggteam.mathrpg.Knight
+utils/Equations.java
+ utils.Equations
 com/ggteam/mathrpg/TouchManager.java
  com.ggteam.mathrpg.TouchManager
 com/ggteam/mathrpg/GameManager.java
  com.ggteam.mathrpg.GameManager
 com/ggteam/mathrpg/MenuScreen.java
  com.ggteam.mathrpg.MenuScreen
+view/GameScreen.java
+ view.GameScreen
 com/ggteam/mathrpg/Adventure.java
  com.ggteam.mathrpg.Adventure
-com/ggteam/mathrpg/MainGame.java
- com.ggteam.mathrpg.MainGame
+com/ggteam/mathrpg/InputManager.java
+ com.ggteam.mathrpg.InputManager

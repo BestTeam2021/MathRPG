@@ -7,6 +7,7 @@ public class MainGame extends Game {
 	private Screen gameScreen;
 
 	public MainGame() {
+		
 	}
 
 	public void create() {

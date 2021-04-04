@@ -14,30 +14,21 @@ public class Drop {
         Random generator = new Random();
         int random = generator.nextInt(140);
 
-        if (random < 70)
-            treasure = Mixtures.dropMixture();
-        else if (random < 90)
+
+     if (random < 90)
             treasure = 8;
         else if (random < 110)
             treasure = 9;
         else if (random < 115)
             treasure = 10;
-        else if (random < 125)
-            treasure = Rings.dropRing();
-        else if (random < 130)
-            treasure = Swords.dropSword();
-        else if (random < 135)
-            treasure = Armors.dropArmor();
-        else if (random < 140)
-            treasure = Shields.dropShield();
+
     }
 
     Drop(int x_position, int y_position, int treasure) {
         this.x_position = x_position;
         this.y_position = y_position;
-        if (treasure > 0 && treasure < 8)
-            this.treasure = Mixtures.nextPotion(treasure - 1) + 1;
-        else if (treasure == 8 || treasure == 9 || treasure == 10)
+
+         if (treasure == 8 || treasure == 9 || treasure == 10)
             this.treasure = treasure;
         else if (treasure >= 11 && treasure <= 16)
             this.treasure = treasure;
@@ -49,10 +40,8 @@ public class Drop {
             this.treasure = treasure;
     }
 
-    void checkTreasure() {
-        if (treasure > 0 && treasure < 8)
-            Interface.newItem(Mixtures.prevPotion(treasure - 1) + 1);
-        else if (treasure == 8 || treasure == 9 || treasure == 10)
+        void checkTreasure () {
+            if (treasure == 8 || treasure == 9 || treasure == 10)
             Interface.newItem(treasure);
         else if (treasure >= 11 && treasure <= 16)
             Interface.newItem(treasure);
@@ -62,5 +51,5 @@ public class Drop {
             Interface.newItem(treasure);
         else if (treasure == 41 || treasure == 42 || treasure == 43)
             Interface.newItem(treasure);
+        }
     }
-}

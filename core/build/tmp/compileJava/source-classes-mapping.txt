@@ -1,24 +1,49 @@
+com/ggteam/mathrpg/Actions.java
+ com.ggteam.mathrpg.Actions
+com/ggteam/mathrpg/Ground.java
+ com.ggteam.mathrpg.Ground
+com/ggteam/mathrpg/Fire.java
+ com.ggteam.mathrpg.Fire
+com/ggteam/mathrpg/GameManager.java
+ com.ggteam.mathrpg.GameManager
+view/GameScreen.java
+ view.GameScreen
+com/ggteam/mathrpg/Adventure.java
+ com.ggteam.mathrpg.Adventure
+com/ggteam/mathrpg/Level.java
+ com.ggteam.mathrpg.Level
 utils/Equations.java
  utils.Equations
 model/GameObject.java
  model.GameObject
+com/ggteam/mathrpg/Items.java
+ com.ggteam.mathrpg.Items
+com/ggteam/mathrpg/InputManager.java
+ com.ggteam.mathrpg.InputManager
+com/ggteam/mathrpg/Ice.java
+ com.ggteam.mathrpg.Ice
+com/ggteam/mathrpg/TouchManager.java
+ com.ggteam.mathrpg.TouchManager
+com/ggteam/mathrpg/Drop.java
+ com.ggteam.mathrpg.Drop
 com/ggteam/mathrpg/Knight.java
  com.ggteam.mathrpg.Knight
 com/ggteam/mathrpg/MenuScreen.java
  com.ggteam.mathrpg.MenuScreen
-view/GameScreen.java
- view.GameScreen
-com/ggteam/mathrpg/Room.java
- com.ggteam.mathrpg.Room
+com/ggteam/mathrpg/Door.java
+ com.ggteam.mathrpg.Door
 com/ggteam/mathrpg/MainGame.java
  com.ggteam.mathrpg.MainGame
+com/ggteam/mathrpg/StructureGenerator.java
+ com.ggteam.mathrpg.StructureGenerator
 com/ggteam/mathrpg/Enemies.java
  com.ggteam.mathrpg.Enemies
-com/ggteam/mathrpg/TouchManager.java
- com.ggteam.mathrpg.TouchManager
-com/ggteam/mathrpg/GameManager.java
- com.ggteam.mathrpg.GameManager
-com/ggteam/mathrpg/Adventure.java
- com.ggteam.mathrpg.Adventure
-com/ggteam/mathrpg/InputManager.java
- com.ggteam.mathrpg.InputManager
+ com.ggteam.mathrpg.Enemies$Slime
+com/ggteam/mathrpg/Room.java
+ com.ggteam.mathrpg.Room
+com/ggteam/mathrpg/Chests.java
+ com.ggteam.mathrpg.Chests
+com/ggteam/mathrpg/Interface.java
+ com.ggteam.mathrpg.Interface
+com/ggteam/mathrpg/Wind.java
+ com.ggteam.mathrpg.Wind

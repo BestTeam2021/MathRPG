@@ -98,8 +98,8 @@ public class MenuScreen implements Screen {
         this.width = (float)Gdx.graphics.getWidth();
         this.camera = new OrthographicCamera(this.width, this.height);
         this.batch = new SpriteBatch();
-        this.startButtonTexture = new Texture(Gdx.files.internal("startButton.png"));
-        this.exitButtonTexture = new Texture(Gdx.files.internal("ExitButton.png"));
+        this.MenuButtonTexture = new Texture(Gdx.files.internal("MenuButton1.png"));
+        this.exitButtonTexture = new Texture(Gdx.files.internal("ExitButton1.png"));
         this.startButtonTexture = new Texture(Gdx.files.internal("startButton.png"));
         this.temp = new Vector3();
         this.game = game;

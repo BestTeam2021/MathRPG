@@ -20,7 +20,7 @@ public class GameManager {
 
     public static void initialize(float width, float height) {
         knight = new Knight();
-        knightTexture = new Texture(Gdx.files.internal("knight.png"));
+        knightTexture = new Texture(Gdx.files.internal("knight111.png"));
         knight.knightSprite = new Sprite(knightTexture);
        knight.knightSprite.setSize(knight.knightSprite.getWidth() * (width / KNIGHT_RESIZE_FACTOR), knight.knightSprite.getHeight() * (width / KNIGHT_RESIZE_FACTOR));
 

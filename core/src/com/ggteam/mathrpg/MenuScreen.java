@@ -43,11 +43,11 @@ public class MenuScreen implements Screen {
     public void show() {
         this.backGroundTexture = new Texture(Gdx.files.internal("temporary_background.jpg"));
        this.backGroundSprite = new Sprite(this.backGroundTexture);
-        this.exitButtonTexture = new Texture(Gdx.files.internal("ExitButton.png"));
+        this.exitButtonTexture = new Texture(Gdx.files.internal("ExitButton1.png"));
         this.exitButtonSprite = new Sprite(this.exitButtonTexture);
         this.startButtonTexture = new Texture(Gdx.files.internal("startButton.png"));
         this.startButtonSprite = new Sprite(this.startButtonTexture);
-        this.MenuButtonTexture = new Texture(Gdx.files.internal("MenuButton.png"));
+        this.MenuButtonTexture = new Texture(Gdx.files.internal("MenuButton1.png"));
         this.MenuButtonSprite = new Sprite(this.MenuButtonTexture);
         this.backGroundSprite.setSize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 

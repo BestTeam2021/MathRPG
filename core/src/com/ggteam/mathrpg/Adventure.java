@@ -24,6 +24,7 @@ public class Adventure implements Screen {
     }
 
     public void resize(int width, int height) {
+
     }
 
     public void pause() {

@@ -1,8 +1,10 @@
 package com.ggteam.mathrpg;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 
 public class InterfaceManager {
@@ -30,11 +32,17 @@ public class InterfaceManager {
         interfaceStage = new Stage(MainGame.getViewportInterfaceStage());
         pauseMenuTable = PauseMenuButtons.getObject().getPauseMenuTable();
         background = Background.getObject().getBackground();
+        battleTable = BattleTable.getObject().getBattletable();
+
+        Skin skin = new Skin(Gdx.files.internal("myskin/myskin.json"));
+        battleTable.setSkin(skin);
+        battleTable.setPosition(Gdx.graphics.getWidth() / 2 - 100 , Gdx.graphics.getHeight() / 2 - 100);
 
 
         interfaceStage.addActor(pauseMenuTable);
         interfaceStage.addActor(background);
 
+        changeInterfaceState("GAME");
     }
 
     void changeInterfaceState(String state) {
@@ -43,15 +51,17 @@ public class InterfaceManager {
             case GAME:
                 pauseMenuTable.setVisible(false);
                 background.setVisible(true);
-                
+                battleTable.setVisible(false);
                 break;
             case PAUSE:
                 pauseMenuTable.setVisible(true);
+                battleTable.setVisible(false);
                // background.set;
                 break;
             case BATTLE:
-                pauseMenuTable.setVisible(true);
+                pauseMenuTable.setVisible(false);
                 background.setVisible(false);
+                battleTable.setVisible(true);
                 // background.set;
 
                 break;
@@ -63,6 +73,9 @@ public class InterfaceManager {
     }
 
     public void draw(SpriteBatch spriteBatch) {
-        pauseMenuTable.draw(spriteBatch, 1);
+        if (pauseMenuTable.isVisible())
+            pauseMenuTable.draw(spriteBatch, 1);
+        if (battleTable.isVisible())
+            battleTable.draw(spriteBatch, 1);
     }
 }

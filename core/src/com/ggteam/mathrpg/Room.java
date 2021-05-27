@@ -252,8 +252,8 @@ public class Room {
                             wall = 0;
                     }
                 }
-                Door door = new Door(index, doorID, wall, place, height, width);
-                doors.add(door);
+//                Door door = new Door(index, doorID, wall, place, height, width);
+//                doors.add(door);
             }
         }
     }
